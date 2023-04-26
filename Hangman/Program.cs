@@ -13,22 +13,21 @@ namespace Hangman
             Console.WriteLine("| Welcome to Hangman |");
             Console.WriteLine(" --------------------");
             string[] listwords = new string[11];
-            listwords[0] = "dinosaur";
-            listwords[1] = "scheme";
-            listwords[2] = "marlboro";
-            listwords[3] = "ignorant";
-            listwords[4] = "thiruvananthapuram";
-            listwords[5] = "synthetic";
-            listwords[6] = "claustrophobia";
-            listwords[7] = "gibberish";
-            listwords[8] = "stethoscope";
-            listwords[9] = "butterscotch";
-            /*listwords[10] = "claustrophobia";
-            listwords[11] = "gibberish";*/
+            List<string> words = new List<string>();
+            words.Add("dinosaur");
+            words.Add("scheme");
+            words.Add("marlboro");
+            words.Add("ignorant");
+            words.Add("thiruvananthapuram");
+            words.Add("synthetic");
+            words.Add("claustrophobia");
+            words.Add("gibberish");
+            words.Add("stethoscope");
+            words.Add("butterscotch");
             bool flag;
             Random randGen = new Random();
-            var idx = randGen.Next(0, 9);
-            string mysteryWord = listwords[idx];
+            var idx = randGen.Next(0, words.Count);
+            string mysteryWord = words[idx];
             Console.WriteLine("It is a {0} letter word",mysteryWord.Length);
             char[] guess = new char[mysteryWord.Length];
             Console.Write("Please enter your guess: ");
@@ -36,7 +35,7 @@ namespace Hangman
             for (int p = 0; p < mysteryWord.Length; p++)
                 guess[p] = '-';
 
-            while (numGuess<=mysteryWord.Length+2)
+            while (numGuess<=mysteryWord.Length)
             {
                 flag = false;
                 char playerGuess = char.Parse(Console.ReadLine());
@@ -58,14 +57,18 @@ namespace Hangman
                 String s= new String(guess);
                 if(s==(mysteryWord))
                 {
-                    Console.WriteLine("Congratulations");
+                    Console.WriteLine(" ------------------------------------");
+                    Console.WriteLine("****Congratulations****");
+                    Console.WriteLine("     You have Won at last");
                     break;
                     
                 }
                 
-                if (numGuess == mysteryWord.Length + 2)
+                if (numGuess == mysteryWord.Length )
                 {
-                    Console.WriteLine("Game Over");
+                    Console.WriteLine(" ------------------------------------");
+                    Console.WriteLine("!!!!!Game Over!!!!!!");
+                    Console.WriteLine("     Try Harder");
                     break;
                 }
                 
