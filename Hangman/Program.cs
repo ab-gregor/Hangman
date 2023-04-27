@@ -60,7 +60,18 @@ namespace Hangman
                     Console.WriteLine(" ------------------------------------");
                     Console.WriteLine("****Congratulations****");
                     Console.WriteLine("     You have Won at last");
-                    break;
+                    Console.WriteLine();
+                    Console.WriteLine("Enter your option: ");
+                    Console.WriteLine("1. Restart, 2. Quit");
+                    int choice = Convert.ToInt32(Console.ReadLine());
+                    if (choice == 1)
+                    {
+                        Main();
+                    }
+                    else
+                    {
+                        Environment.Exit(1);
+                    }
                     
                 }
                 
@@ -69,7 +80,18 @@ namespace Hangman
                     Console.WriteLine(" ------------------------------------");
                     Console.WriteLine("!!!!!Game Over!!!!!!");
                     Console.WriteLine("     Try Harder");
-                    break;
+                    Console.WriteLine();
+                    Console.WriteLine("Enter your option: ");
+                    Console.WriteLine("1. Restart, 2. Quit");
+                    int choice = Convert.ToInt32(Console.ReadLine());
+                    if (choice == 1)
+                    {
+                        Main();
+                    }
+                    else
+                    {
+                        Environment.Exit(1);
+                    }
                 }
                 
             }
