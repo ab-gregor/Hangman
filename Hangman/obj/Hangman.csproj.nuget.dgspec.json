@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\VX322WZ\\source\\repos\\Hangman\\Hangman\\Hangman.csproj": {}
+    "C:\\Users\\LL672YN\\OneDrive - EY\\Documents\\GitHub\\Hangman\\Hangman\\Hangman.csproj": {}
   },
   "projects": {
-    "C:\\Users\\VX322WZ\\source\\repos\\Hangman\\Hangman\\Hangman.csproj": {
+    "C:\\Users\\LL672YN\\OneDrive - EY\\Documents\\GitHub\\Hangman\\Hangman\\Hangman.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\VX322WZ\\source\\repos\\Hangman\\Hangman\\Hangman.csproj",
+        "projectUniqueName": "C:\\Users\\LL672YN\\OneDrive - EY\\Documents\\GitHub\\Hangman\\Hangman\\Hangman.csproj",
         "projectName": "Hangman",
-        "projectPath": "C:\\Users\\VX322WZ\\source\\repos\\Hangman\\Hangman\\Hangman.csproj",
-        "packagesPath": "C:\\Users\\VX322WZ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\VX322WZ\\source\\repos\\Hangman\\Hangman\\obj\\",
+        "projectPath": "C:\\Users\\LL672YN\\OneDrive - EY\\Documents\\GitHub\\Hangman\\Hangman\\Hangman.csproj",
+        "packagesPath": "C:\\Users\\LL672YN\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LL672YN\\OneDrive - EY\\Documents\\GitHub\\Hangman\\Hangman\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\VX322WZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LL672YN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
