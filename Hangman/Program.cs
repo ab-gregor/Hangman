@@ -5,10 +5,16 @@ using System.Text;
 
 namespace Hangman
 {
-    class Program
+    class Score
     {
+        public static List<int> score = new List<int>();
+    }
+    class Program:Score
+    {
+        
         static void Main()
         {
+            
             Console.WriteLine(" --------------------");
             Console.WriteLine("| Welcome to Hangman |");
             Console.WriteLine(" --------------------");
@@ -57,9 +63,13 @@ namespace Hangman
                 String s= new String(guess);
                 if(s==(mysteryWord))
                 {
+                    Score.score.Add(100 - numGuess);
                     Console.WriteLine(" ------------------------------------");
                     Console.WriteLine("****Congratulations****");
-                    Console.WriteLine("     You have Won at last");
+                    Console.WriteLine("     You have Won at last ");
+                    Console.WriteLine("Your Score: {0}", (100 - numGuess));
+
+                    Console.WriteLine("High score: {0}", Score.score.Max());
                     Console.WriteLine();
                     Console.WriteLine("Enter your option: ");
                     Console.WriteLine("1. Restart, 2. Quit");
